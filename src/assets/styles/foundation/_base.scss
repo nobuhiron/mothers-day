@@ -1,0 +1,39 @@
+@use '../global' as *;
+
+html {
+  min-height: 100%;
+  width: 100%;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // scrollバーの常時表示は避ける（必要に応じて追加）
+  overflow-x: hidden;
+}
+
+body {
+  color: $black;
+  font-family: $ff-ja;
+  @include fz(14, 16);
+  line-height: $lh-base;
+  font-weight: $fw-base;
+  background-color: $white;
+  overflow-wrap: break-word;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: top;
+  display: block;
+}
+
+#contents-area {
+  padding-bottom: 0;
+}

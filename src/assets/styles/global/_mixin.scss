@@ -1,0 +1,26 @@
+@use 'sass:map';
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media (min-width:#{map.get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin fz(
+  $min-size: 10,
+  $max-size: 80,
+  $min-viewport: 375,
+  $max-viewport: 1920
+) {
+  $slope: calc(($max-size - $min-size) / ($max-viewport - $min-viewport));
+  $intercept: calc($min-size - $slope * $min-viewport);
+  $fluid-size: calc($slope * 100vw + $intercept / 16 * 1rem);
+  font-size: clamp($min-size / 16 * 1rem, $fluid-size, $max-size / 16 * 1rem);
+}
