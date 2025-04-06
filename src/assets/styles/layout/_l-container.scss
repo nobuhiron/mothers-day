@@ -1,0 +1,11 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
+.l-container {
+  padding-inline: $layout-padding-sp;
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: $layout-max-width;
+    padding-inline: $layout-padding-pc;
+  }
+}

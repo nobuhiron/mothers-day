@@ -12,5 +12,8 @@
     "sass": "^1.86.1",
     "vite": "^6.2.0",
     "vite-plugin-imagemin": "^0.6.1"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }

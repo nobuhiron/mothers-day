@@ -1,0 +1,28 @@
+@use '../foundation/index' as *;
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
+.p-price-range {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-inline: auto;
+    justify-content: center;
+  }
+  &__item {
+    width: 100%;
+    max-width: 360px;
+    @include mq(sm) {
+      width: 33%;
+    }
+  }
+  &__link {
+    display: block;
+    padding: 1rem;
+    border: 1px solid $color-text;
+    border-radius: 1rem;
+    text-align: center;
+    min-width: 130px;
+  }
+}

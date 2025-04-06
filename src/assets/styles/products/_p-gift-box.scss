@@ -1,0 +1,37 @@
+@use '../foundation/index' as *;
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
+.p-gift-box {
+  &__list {
+    margin-block-end: -10%;
+  }
+  &__item {
+    width: 46%;
+    &._right {
+      margin-inline-start: auto;
+    }
+  }
+  &__card {
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__card-img {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+  }
+}
+
+@for $i from 1 through 10 {
+  .p-gift-box__item:nth-child(#{$i}) {
+    $y: -($i - 1) * 20%;
+    transform: translateY($y);
+  }
+}

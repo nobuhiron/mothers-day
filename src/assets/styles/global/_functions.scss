@@ -1,0 +1,12 @@
+// function定義
+@function fz($min-size, $max-size, $min-viewport: 375, $max-viewport: 1920) {
+  $slope: ($max-size - $min-size) / ($max-viewport - $min-viewport);
+  $intercept: $min-size - $slope * $min-viewport;
+
+  $vw-part: $slope * 100;
+  $rem-part: $intercept / 16;
+
+  $fluid-size: calc(#{$vw-part}vw + #{$rem-part}rem);
+
+  @return clamp(#{$min-size / 16}rem, #{$fluid-size}, #{$max-size / 16}rem);
+}

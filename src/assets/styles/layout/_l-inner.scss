@@ -1,0 +1,11 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+.l-inner {
+  margin-inline: auto;
+  @include mq(md) {
+    max-width: $layout-max-width-inner;
+    &._wide {
+      max-width: $layout-max-width-inner--wide;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@use '../global' as *;
+@use '../global/variables' as *;
 
 html {
   min-height: 100%;
@@ -12,12 +12,12 @@ html {
 }
 
 body {
-  color: $black;
-  font-family: $ff-ja;
-  @include fz(14, 16);
-  line-height: $lh-base;
-  font-weight: $fw-base;
-  background-color: $white;
+  color: $color-black;
+  font-family: $font-sans;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $fw-regular;
+  background-color: $color-bg;
   overflow-wrap: break-word;
 }
 
@@ -27,6 +27,7 @@ a {
 }
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: cover;

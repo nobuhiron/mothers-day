@@ -1,0 +1,41 @@
+@use '../foundation/index' as *;
+@use '../global/mixins' as *;
+
+.p-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    @include mq(sm) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__item {
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    gap: 1rem;
+    &:after {
+      content: '';
+      display: block;
+      width: 2rem;
+      aspect-ratio: 1/1;
+      background-color: #000;
+    }
+  }
+  &__link-img {
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 1 30%;
+    max-width: 5rem;
+    aspect-ratio: 1/1;
+  }
+  &__link-title {
+    flex: 1 0 70%;
+  }
+}
