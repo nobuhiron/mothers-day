@@ -4,8 +4,15 @@
 .l-container {
   padding-inline: $layout-padding-sp;
   margin: 0 auto;
+  display: grid;
   @include mq(md) {
     max-width: $layout-max-width;
     padding-inline: $layout-padding-pc;
+  }
+  &:has(.c-section-title) {
+    gap: $spacing-lg;
+    @include mq(md) {
+      gap: $spacing-xl;
+    }
   }
 }

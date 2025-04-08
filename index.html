@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Noto+Serif+JP:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/assets/styles/style.scss" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
@@ -34,36 +33,45 @@
           />
         </picture>
       </div>
+      <div class="l-section-wrapper">
       <section aria-labelledby="info-heading" class="p-info">
-        <div class="l-container">
-          <article class="p-info__article">
-            <header class="p-info__header">
-              <span class="c-section-subtitle">2025 母の日ギフト</span>
+          <div class="l-container">
+            <div class="l-inner">
+            <div class="p-info__detail">
               <h2 id="info-heading" class="c-section-title p-info__title">
-                配送日について
-              </h2>
-            </header>
-            <div class="p-info__body">
-              <div class="p-info__description">
-                <p>今年の母の日は<span>5月11日(日)</span>です。</p>
-                <p>
-                  <span>5/8(木)正午12時まで</span>のご注文で母の日当日配達可能!
+                <span>2025 母の日ギフト</span>
+              配送日について
+            </h2>
+            <div class="p-info__content">
+              <p class="p-info__date">今年の母の日は<strong>5月11日(日)</strong>です。</p>
+              <div class="p-info__deadline--outer">
+                <div class="p-info__deadline--inner">
+                <div class="p-info__deadline-img"><img src="./src/assets/images/delivery.png" alt=""></div>
+                <p class="p-info__deadline-text">
+                  <strong>5/8(木)正午12時まで</strong>のご注文で</br>母の日当日配達可能!
                 </p>
               </div>
+              </div>
             </div>
-          </article>
+            </div>
+          </div>
         </div>
       </section>
       <section aria-labelledby="ranking-heading" class="p-ranking">
         <div class="l-container">
           <h2 id="ranking-heading" class="c-section-title">
-            森半の母の日ギフトランキング
+            森半の母の日<br>ギフトランキング
           </h2>
+          </div>
           <div class="splide js-splide-item">
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
                   <article class="p-ranking__article">
+                    <div class="c-item-card__icon">
+                       <img src="./src/assets/images/rank1.png" alt="">
+                       <span class="c-item-card__rank">No.1</span>
+                     </div>
                     <a href="#" class="c-item-card">
                       <div class="c-item-card__img">
                         <img src="./src/assets/images/gift-a2.jpg" alt="" />
@@ -78,89 +86,104 @@
                         </p>
                       </div>
                     </a>
-                    <a href="#" class="c-item-card__link">商品ページを見る</a>
+                    <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
                   </article>
                 </li>
                 <li class="splide__slide">
                   <article class="p-ranking__article">
-                    <a href="#" class="c-item-card">
+                    <div class="c-item-card__icon">
+                    <img src="./src/assets/images/rank2.png" alt="">
+                    <span class="c-item-card__rank">No.2</span>
+                  </div>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000607" class="c-item-card">
                       <div class="c-item-card__img">
-                        <img src="./src/assets/images/gift-e2.jpg" alt="" />
+                        <img src="./src/assets/images/ranking-item-2.jpg" alt="" />
                       </div>
                       <div class="c-item-card__body">
                         <h4 class="c-item-card__title">
-                          森半 母の日ギフトボックス
+                          森半 抹茶スイーツお試しセット
                         </h4>
                         <p class="c-item-card__price">
-                          1,500
+                          2,500
                           <span class="c-item-card__price-unit">円(税込)</span>
                         </p>
                       </div>
                     </a>
-                    <a href="#" class="c-item-card__link">商品ページを見る</a>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000607" class="c-item-card__link c-item-link">商品ページを見る</a>
                   </article>
                 </li>
                 <li class="splide__slide">
                   <article class="p-ranking__article">
-                    <a href="#" class="c-item-card">
+                    <div class="c-item-card__icon">
+                        <img src="./src/assets/images/rank3.png" alt="">
+                        <span class="c-item-card__rank">No.3</span>
+                      </div>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000654" class="c-item-card">
                       <div class="c-item-card__img">
-                        <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                        <img src="./src/assets/images/ranking-item-3.jpg" alt="" />
                       </div>
                       <div class="c-item-card__body">
                         <h4 class="c-item-card__title">
-                          森半 母の日ギフトボックス
+                          森半 CHASTA(チャスタ)・ISSEN[10P入り] ギフトセット
                         </h4>
                         <p class="c-item-card__price">
-                          1,500
+                          5,390
                           <span class="c-item-card__price-unit">円(税込)</span>
                         </p>
                       </div>
                     </a>
-                    <a href="#" class="c-item-card__link">商品ページを見る</a>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000654" class="c-item-card__link c-item-link">商品ページを見る</a>
                   </article>
                 </li>
                 <li class="splide__slide">
                   <article class="p-ranking__article">
-                    <a href="#" class="c-item-card">
+                    <div class="c-item-card__icon">
+                    <img src="./src/assets/images/rank4-5.png" alt="">
+                    <span class="c-item-card__rank">No.4</span>
+                  </div>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000097" class="c-item-card">
                       <div class="c-item-card__img">
-                        <img src="./src/assets/images/gift-e2.jpg" alt="" />
+                        <img src="./src/assets/images/ranking-item-4.jpg" alt="" />
                       </div>
                       <div class="c-item-card__body">
                         <h4 class="c-item-card__title">
-                          森半 母の日ギフトボックス
+                          森半 銘茶五香(ごこう)・抹茶カステラ詰合せ(WG-4)
                         </h4>
                         <p class="c-item-card__price">
-                          1,500
+                          4,542
                           <span class="c-item-card__price-unit">円(税込)</span>
                         </p>
                       </div>
                     </a>
-                    <a href="#" class="c-item-card__link">商品ページを見る</a>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000097" class="c-item-card__link c-item-link">商品ページを見る</a>
                   </article>
                 </li>
                 <li class="splide__slide">
                   <article class="p-ranking__article">
-                    <a href="#" class="c-item-card">
+                    <div class="c-item-card__icon">
+                    <img src="./src/assets/images/rank4-5.png" alt="">
+                    <span class="c-item-card__rank">No.5</span>
+                  </div>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000307" class="c-item-card">
                       <div class="c-item-card__img">
-                        <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                        <img src="./src/assets/images/ranking-item-5.jpg" alt="" />
                       </div>
                       <div class="c-item-card__body">
                         <h4 class="c-item-card__title">
-                          森半 母の日ギフトボックス
+                          森半 お茶屋のスイーツ満足セット
                         </h4>
                         <p class="c-item-card__price">
-                          1,500
+                          5,100
                           <span class="c-item-card__price-unit">円(税込)</span>
                         </p>
                       </div>
                     </a>
-                    <a href="#" class="c-item-card__link">商品ページを見る</a>
+                    <a href="https://www.tea-and-coffee.shop/view/item/000000000307" class="c-item-card__link c-item-link">商品ページを見る</a>
                   </article>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
       </section>
       <section aria-labelledby="nav-heading" class="p-nav">
         <div class="l-container">
@@ -168,10 +191,10 @@
           <div class="l-inner _wide">
             <ul class="p-nav__list">
               <li class="p-nav__item">
-                <a href="#" class="p-nav__link">
+                <a href="#about" class="p-nav__link">
                   <div class="p-nav__link-img">
                     <img
-                      src="./src/assets/images/gift-a2.jpg"
+                      src="./src/assets/images/svg/logo.svg"
                       alt=""
                       width="100"
                       height="100"
@@ -181,46 +204,46 @@
                 </a>
               </li>
               <li class="p-nav__item">
-                <a href="#" class="p-nav__link">
+                <a href="#otameshi" class="p-nav__link">
                   <div class="p-nav__link-img">
                     <img
-                      src="./src/assets/images/gift-a2.jpg"
+                      src="./src/assets/images/ranking-item-2.jpg"
                       alt=""
                       width="100"
                       height="100"
                     />
                   </div>
-                  <span class="p-nav__link-title">森半とは</span>
+                  <span class="p-nav__link-title">お試しセット</span>
                 </a>
               </li>
               <li class="p-nav__item">
-                <a href="#" class="p-nav__link">
+                <a href="#gift-box" class="p-nav__link">
                   <div class="p-nav__link-img">
                     <img
-                      src="./src/assets/images/gift-a2.jpg"
+                      src="./src/assets/images/mothersday_box.jpg"
                       alt=""
                       width="100"
                       height="100"
                     />
                   </div>
-                  <span class="p-nav__link-title">森半とは</span>
+                  <span class="p-nav__link-title">母の日ギフトセット</span>
                 </a>
               </li>
               <li class="p-nav__item">
-                <a href="#" class="p-nav__link">
+                <a href="#furoshiki" class="p-nav__link">
                   <div class="p-nav__link-img">
                     <img
-                      src="./src/assets/images/gift-a2.jpg"
+                      src="./src/assets/images/mothersday_furoshiki.jpg"
                       alt=""
                       width="100"
                       height="100"
                     />
                   </div>
-                  <span class="p-nav__link-title">森半とは</span>
+                  <span class="p-nav__link-title">風呂敷ラッピング</span>
                 </a>
               </li>
               <li class="p-nav__item">
-                <a href="#" class="p-nav__link">
+                <a href="#e-gift" class="p-nav__link">
                   <div class="p-nav__link-img">
                     <img
                       src="./src/assets/images/gift-a2.jpg"
@@ -229,20 +252,7 @@
                       height="100"
                     />
                   </div>
-                  <span class="p-nav__link-title">森半とは</span>
-                </a>
-              </li>
-              <li class="p-nav__item">
-                <a href="#" class="p-nav__link">
-                  <div class="p-nav__link-img">
-                    <img
-                      src="./src/assets/images/gift-a2.jpg"
-                      alt=""
-                      width="100"
-                      height="100"
-                    />
-                  </div>
-                  <span class="p-nav__link-title">森半とは</span>
+                  <span class="p-nav__link-title">e-gift</span>
                 </a>
               </li>
             </ul>
@@ -257,117 +267,97 @@
           <div class="l-inner _wide">
             <ul class="p-price-range__list">
               <li class="p-price-range__item">
-                <a href="#" class="p-price-range__link"> 1,000円 〜 2,000円 </a>
+                <a href="#price-gift-1000-2000" class="p-price-range__link"> 1,000円 〜 2,000円 </a>
               </li>
               <li class="p-price-range__item">
-                <a href="#" class="p-price-range__link"> 2,000円 〜 4,000円 </a>
+                <a href="#price-gift-2000-4000" class="p-price-range__link"> 2,000円 〜 4,000円 </a>
               </li>
               <li class="p-price-range__item">
-                <a href="#" class="p-price-range__link"> 4,000円 〜 6,000円 </a>
+                <a href="#price-gift-4000-6000" class="p-price-range__link"> 4,000円 〜 6,000円 </a>
               </li>
               <li class="p-price-range__item">
-                <a href="#" class="p-price-range__link"> 6,000円 〜 8,000円 </a>
+                <a href="#price-gift-6000-8000" class="p-price-range__link"> 6,000円 〜 8,000円 </a>
               </li>
               <li class="p-price-range__item">
-                <a href="#" class="p-price-range__link"> 8,000円 〜 </a>
+                <a href="#price-gift-8000" class="p-price-range__link"> 8,000円 〜 </a>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="p-pickup-item">
+      <section id="otameshi" class="p-pickup-item">
         <div class="l-container">
           <div class="l-inner">
             <h2 class="c-section-title">お試しセット</h2>
             <article class="p-pickup-item__article">
               <div class="p-pickup-item__img">
-                <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                <img src="./src/assets/images/otameshi_square.jpg" alt="" />
               </div>
-              <div class="p-pickup-item__content">
+              <!-- <div class="p-pickup-item__content">
                 <h3 class="p-pickup-item__title">お試しセット</h3>
                 <p class="p-pickup-item__price">
                   1,500
                   <span class="c-item-card__price-unit">円(税込)</span>
                 </p>
-                <a href="#" class="p-pickup-item__link">商品ページを見る</a>
-              </div>
+              </div> -->
+              <a href="#" class="p-pickup-item__link c-item-link">商品ページを見る</a>
             </article>
             <div class="p-pickup-item__detail">
               <div class="splide js-splide-pickup">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide">
-                      <article class="p-pickup-item__article">
-                        <div class="p-pickup-item__article-img">
-                          <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                      <article class="p-pickup-item__slide">
+                        <div class="p-pickup-item__slide-img">
+                          <img src="./src/assets/images/otameshi-image.jpg" alt="" />
                         </div>
-                        <div class="p-pickup-item__article-content">
-                          <h4 class="p-pickup-item__article-title">
-                            森半 母の日ギフトボックス
+                        <div class="p-pickup-item__slide-content">
+                          <h4 class="p-pickup-item__slide-title">
+                           スイーツ三種の詰め合わせセット
                           </h4>
-                          <p class="p-pickup-item__article-description">
-                            森半tea&coffeeではギフトボックス以外にも、母の日にぴったりな包装をご用意しております。
-                          </p>
+                          <p class="p-pickup-item__slide-description">
+                            ご自宅用はもちろん、ちょっとしたギフトにもおすすめ！！                          </p>
                         </div>
                       </article>
                     </li>
                     <li class="splide__slide">
-                      <article class="p-pickup-item__article">
-                        <div class="p-pickup-item__article-img">
-                          <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                      <article class="p-pickup-item__slide">
+                        <div class="p-pickup-item__slide-img">
+                          <img src="./src/assets/images/financier.jpg" alt="" />
                         </div>
-                        <div class="p-pickup-item__article-content">
-                          <h4 class="p-pickup-item__article-title">
-                            森半 母の日ギフトボックス
+                        <div class="p-pickup-item__slide-content">
+                          <h4 class="p-pickup-item__slide-title">
+                            抹茶フィナンシェ
                           </h4>
-                          <p class="p-pickup-item__article-description">
-                            森半tea&coffeeではギフトボックス以外にも、母の日にぴったりな包装をご用意しております。
-                          </p>
+                          <p class="p-pickup-item__slide-description">しっとりとした口当たりで、バター・アーモンドと宇治抹茶のまろやかな風味が口の中でほどけていきます。                          </p>
                         </div>
                       </article>
                     </li>
                     <li class="splide__slide">
-                      <article class="p-pickup-item__article">
-                        <div class="p-pickup-item__article-img">
-                          <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                      <article class="p-pickup-item__slide">
+                        <div class="p-pickup-item__slide-img">
+                          <img src="./src/assets/images/waffle.jpg" alt="" />
                         </div>
-                        <div class="p-pickup-item__article-content">
-                          <h4 class="p-pickup-item__article-title">
-                            森半 母の日ギフトボックス
+                        <div class="p-pickup-item__slide-content">
+                          <h4 class="p-pickup-item__slide-title">
+                           抹茶ヴァッフェル
                           </h4>
-                          <p class="p-pickup-item__article-description">
-                            森半tea&coffeeではギフトボックス以外にも、母の日にぴったりな包装をご用意しております。
-                          </p>
+                          <p class="p-pickup-item__slide-description">
+                            きめ細かいサクサクのクッキ生地にしっとりとしたクリームがお口の中でほどける上品な味わいの一品です。                          </p>
                         </div>
                       </article>
                     </li>
                     <li class="splide__slide">
-                      <article class="p-pickup-item__article">
-                        <div class="p-pickup-item__article-img">
-                          <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                      <article class="p-pickup-item__slide">
+                        <div class="p-pickup-item__slide-img">
+                          <img src="./src/assets/images/cookie.jpg" alt="" />
                         </div>
-                        <div class="p-pickup-item__article-content">
-                          <h4 class="p-pickup-item__article-title">
-                            森半 母の日ギフトボックス
+                        <div class="p-pickup-item__slide-content">
+                          <h4 class="p-pickup-item__slide-title">
+                            抹茶クッキー
                           </h4>
-                          <p class="p-pickup-item__article-description">
-                            森半tea&coffeeではギフトボックス以外にも、母の日にぴったりな包装をご用意しております。
-                          </p>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="splide__slide">
-                      <article class="p-pickup-item__article">
-                        <div class="p-pickup-item__article-img">
-                          <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                        </div>
-                        <div class="p-pickup-item__article-content">
-                          <h4 class="p-pickup-item__article-title">
-                            森半 母の日ギフトボックス
-                          </h4>
-                          <p class="p-pickup-item__article-description">
-                            森半tea&coffeeではギフトボックス以外にも、母の日にぴったりな包装をご用意しております。
-                          </p>
+                          <p class="p-pickup-item__slide-description">
+高級抹茶をたっぷり使って焼き上げた、香り豊かなクッキーです。俵型の一口にちょうどいいサイズ♪                          </p>
                         </div>
                       </article>
                     </li>
@@ -378,25 +368,25 @@
           </div>
         </div>
       </section>
-      <section class="p-gift-box">
+      <section id="gift-box" class="p-gift-box">
         <div class="l-container">
           <h2 class="c-section-title">母の日ギフトボックス</h2>
           <div class="p-gift-box__img">
-            <img src="./src/assets/images/gift-a2.jpg" alt="" />
+            <img src="./src/assets/images/giftbox_square.jpg" alt="" />
           </div>
           <ul class="p-gift-box__list">
             <li class="p-gift-box__item _right">
               <article class="p-gift-box__article">
                 <a href="#" class="p-gift-box__card">
                   <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                    <img src="./src/assets/images/gift-h.jpg" alt="" />
                   </div>
                   <div class="p-gift-box__card-content">
                     <h4 class="p-gift-box__card-title">
-                      森半 母の日ギフトボックス
+                      ギフトセットA
                     </h4>
                     <p class="p-gift-box__card-price">
-                      1,500
+                      7,000
                       <span class="c-item-card__price-unit">円(税込)</span>
                     </p>
                   </div>
@@ -405,117 +395,117 @@
                   <p class="p-gift-box__card-catch">
                     【甘い物好きなお母さんへ】
                   </p>
-                  <a href="#" class="p-gift-box__item-link">商品ページを見る</a>
                 </div>
+                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
               </article>
             </li>
-            <li class="p-gift-box__item">
+            <li class="p-gift-box__item ">
               <article class="p-gift-box__article">
                 <a href="#" class="p-gift-box__card">
                   <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                    <img src="./src/assets/images/gift-h.jpg" alt="" />
                   </div>
                   <div class="p-gift-box__card-content">
                     <h4 class="p-gift-box__card-title">
-                      森半 母の日ギフトボックス
+                      ギフトセットB
                     </h4>
                     <p class="p-gift-box__card-price">
-                      1,500
+                     5,900
                       <span class="c-item-card__price-unit">円(税込)</span>
                     </p>
                   </div>
                 </a>
                 <div class="p-gift-box__article-content">
                   <p class="p-gift-box__card-catch">
-                    【甘い物好きなお母さんへ】
+                    【コーヒー好きなお母さんへ】
                   </p>
-                  <a href="#" class="p-gift-box__item-link">商品ページを見る</a>
                 </div>
-              </article>
-            </li>
-            <li class="p-gift-box__item _right">
-              <article class="p-gift-box__article">
-                <a href="#" class="p-gift-box__card">
-                  <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                  </div>
-                  <div class="p-gift-box__card-content">
-                    <h4 class="p-gift-box__card-title">
-                      森半 母の日ギフトボックス
-                    </h4>
-                    <p class="p-gift-box__card-price">
-                      1,500
-                      <span class="c-item-card__price-unit">円(税込)</span>
-                    </p>
-                  </div>
-                </a>
-                <div class="p-gift-box__article-content">
-                  <p class="p-gift-box__card-catch">
-                    【甘い物好きなお母さんへ】
-                  </p>
-                  <a href="#" class="p-gift-box__item-link">商品ページを見る</a>
-                </div>
-              </article>
-            </li>
-            <li class="p-gift-box__item">
-              <article class="p-gift-box__article">
-                <a href="#" class="p-gift-box__card">
-                  <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                  </div>
-                  <div class="p-gift-box__card-content">
-                    <h4 class="p-gift-box__card-title">
-                      森半 母の日ギフトボックス
-                    </h4>
-                    <p class="p-gift-box__card-price">
-                      1,500
-                      <span class="c-item-card__price-unit">円(税込)</span>
-                    </p>
-                  </div>
-                </a>
-                <div class="p-gift-box__article-content">
-                  <p class="p-gift-box__card-catch">
-                    【甘い物好きなお母さんへ】
-                  </p>
-                  <a href="#" class="p-gift-box__item-link">商品ページを見る</a>
-                </div>
+                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
               </article>
             </li>
             <li class="p-gift-box__item _right">
               <article class="p-gift-box__article">
                 <a href="#" class="p-gift-box__card">
                   <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                    <img src="./src/assets/images/gift-h.jpg" alt="" />
                   </div>
                   <div class="p-gift-box__card-content">
                     <h4 class="p-gift-box__card-title">
-                      森半 母の日ギフトボックス
+                      ギフトセットC
                     </h4>
                     <p class="p-gift-box__card-price">
-                      1,500
+                      5,700
                       <span class="c-item-card__price-unit">円(税込)</span>
                     </p>
                   </div>
                 </a>
                 <div class="p-gift-box__article-content">
                   <p class="p-gift-box__card-catch">
-                    【甘い物好きなお母さんへ】
+                    【コーヒー好きなお母さんへ】
                   </p>
-                  <a href="#" class="p-gift-box__item-link">商品ページを見る</a>
                 </div>
+                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
+              </article>
+            </li>
+            <li class="p-gift-box__item">
+              <article class="p-gift-box__article">
+                <a href="#" class="p-gift-box__card">
+                  <div class="p-gift-box__card-img">
+                    <img src="./src/assets/images/gift-h.jpg" alt="" />
+                  </div>
+                  <div class="p-gift-box__card-content">
+                    <h4 class="p-gift-box__card-title">
+                      ギフトセットD
+                    </h4>
+                    <p class="p-gift-box__card-price">
+                     5,800
+                      <span class="c-item-card__price-unit">円(税込)</span>
+                    </p>
+                  </div>
+                </a>
+                <div class="p-gift-box__article-content">
+                  <p class="p-gift-box__card-catch">
+                    【好奇心旺盛なお母さんへ】
+                  </p>
+                </div>
+                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
+              </article>
+            </li>
+            <li class="p-gift-box__item _right">
+              <article class="p-gift-box__article">
+                <a href="#" class="p-gift-box__card">
+                  <div class="p-gift-box__card-img">
+                    <img src="./src/assets/images/gift-h.jpg" alt="" />
+                  </div>
+                  <div class="p-gift-box__card-content">
+                    <h4 class="p-gift-box__card-title">
+                      ギフトセットE
+                    </h4>
+                    <p class="p-gift-box__card-price">
+                      6,000
+                      <span class="c-item-card__price-unit">円(税込)</span>
+                    </p>
+                  </div>
+                </a>
+                <div class="p-gift-box__article-content">
+                  <p class="p-gift-box__card-catch">
+                    【おしゃれなお母さんへ】
+                  </p>
+                </div>
+                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <section aria-labelledby="wrapping-heading" class="p-wrapping">
+      <section id="wrapping" aria-labelledby="wrapping-heading" class="p-wrapping">
         <div class="l-container">
           <h2 id="wrapping-heading" class="c-section-title">
             母の日限定の包装紙
           </h2>
           <article class="p-wrapping__article">
             <div class="p-wrapping__img">
-              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+              <img src="./src/assets/images/wrapping.jpg" alt="" />
             </div>
             <h3 class="p-wrapping__title">
               【母の日限定】カーネーション柄包装紙
@@ -531,554 +521,689 @@
           </article>
         </div>
       </section>
-      <section aria-labelledby="price-gift-heading" class="p-price-gift">
+      <section id="price-gift" aria-labelledby="price-gift-heading" class="p-price-gift">
         <div class="l-container">
           <h2 id="price-gift-heading" class="c-section-title">
             価格別おすすめギフト
           </h2>
+          </div>
           <ul class="p-price-gift__list">
-            <li class="p-price-gift__item">
+            <li id="price-gift-1000-2000" class="p-price-gift__item">
               <article class="p-price-gift__group">
                 <h3 class="p-price-gift__price-label">1,000円 〜 2,000円</h3>
                 <div class="splide js-splide-item">
                   <div class="splide__track">
                     <ul class="splide__list">
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </article>
             </li>
-            <li class="p-price-gift__item">
+            <li id="price-gift-2000-4000" class="p-price-gift__item">
               <article class="p-price-gift__group">
-                <h3 class="p-price-gift__price-label">1,000円 〜 2,000円</h3>
+                <h3 class="p-price-gift__price-label">2,000円 〜 4,000円</h3>
                 <div class="splide js-splide-item">
                   <div class="splide__track">
                     <ul class="splide__list">
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </article>
             </li>
-            <li class="p-price-gift__item">
+            <li id="price-gift-4000-6000" class="p-price-gift__item">
               <article class="p-price-gift__group">
-                <h3 class="p-price-gift__price-label">1,000円 〜 2,000円</h3>
+                <h3 class="p-price-gift__price-label">4,000円 〜 6,000円</h3>
                 <div class="splide js-splide-item">
                   <div class="splide__track">
                     <ul class="splide__list">
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </article>
             </li>
-            <li class="p-price-gift__item">
+            <li id="price-gift-6000-8000" class="p-price-gift__item">
               <article class="p-price-gift__group">
-                <h3 class="p-price-gift__price-label">1,000円 〜 2,000円</h3>
+                <h3 class="p-price-gift__price-label">6,000円 〜 8,000円</h3>
                 <div class="splide js-splide-item">
                   <div class="splide__track">
                     <ul class="splide__list">
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                       <li class="splide__slide">
-                        <a href="#" class="c-item-card">
-                          <div class="c-item-card__img">
-                            <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                          </div>
-                          <div class="c-item-card__body">
-                            <p class="c-item-card__title">
-                              森半 母の日ギフトボックス
-                            </p>
-                            <p class="c-item-card__price">
-                              1,500
-                              <span class="c-item-card__price-unit"
-                                >円(税込)</span
-                              >
-                            </p>
-                          </div>
-                        </a>
-                        <a href="#" class="c-item-card__link"
-                          >商品ページを見る</a
-                        >
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li id="price-gift-8000" class="p-price-gift__item">
+              <article class="p-price-gift__group">
+                <h3 class="p-price-gift__price-label">8,000円 〜</h3>
+                <div class="splide js-splide-item">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="p-price-gift__card-wrapper">
+                          <a href="#" class="c-item-card">
+                            <div class="c-item-card__img">
+                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                            </div>
+                            <div class="c-item-card__body">
+                              <p class="c-item-card__title">
+                                森半 母の日ギフトボックス
+                              </p>
+                              <p class="c-item-card__price">
+                                1,500
+                                <span class="c-item-card__price-unit">円(税込)</span>
+                              </p>
+                            </div>
+                          </a>
+                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -1086,8 +1211,22 @@
               </article>
             </li>
           </ul>
+      </section>
+      <section id="furoshiki" class="p-furoshiki">
+        <div class="l-container">
+          <h2 class="c-section-title">
+            風呂敷ラッピング
+          </h2>
         </div>
       </section>
+      <section id="e-gift" class="p-egift">
+        <div class="l-container">
+          <h2 class="c-section-title">
+            e-Gift
+          </h2>
+        </div>
+      </section>
+    </div>
     </main>
   </body>
 </html>

@@ -21,7 +21,7 @@ $color-sub: $color-gold;
 $font-sans: 'Noto Sans JP', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-serif: 'Noto Serif JP', 'Georgia', 'Times New Roman', serif;
 $fw-regular: 400;
-$fw-bold: 700;
+$fw-semibold: 600;
 $font-size-base: fz(14, 16);
 $line-height-base: 1.62;
 
@@ -36,3 +36,16 @@ $layout-max-width-inner: 738px;
 $layout-max-width-inner--wide: 930px;
 $layout-padding-sp: 8.53%;
 $layout-padding-pc: 11.1%;
+
+// -------------------
+// Spacing
+// -------------------
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 40px;
+$spacing-3xl: 48px;
+$spacing-4xl: 64px;
+$spacing-5xl: 96px;

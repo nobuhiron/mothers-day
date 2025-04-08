@@ -1,6 +1,5 @@
 @use '../foundation/index' as *;
-@use '../global/variables' as *;
-@use '../global/mixins' as *;
+@use '../global/index' as *;
 
 .p-price-range {
   &__list {
@@ -12,7 +11,7 @@
   }
   &__item {
     width: 100%;
-    max-width: 360px;
+    max-width: 300px;
     @include mq(sm) {
       width: 33%;
     }
@@ -24,5 +23,12 @@
     border-radius: 1rem;
     text-align: center;
     min-width: 130px;
+    font-size: fz(14, 16);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__card-wrapper {
+    display: grid;
+    row-gap: $spacing-md;
   }
 }

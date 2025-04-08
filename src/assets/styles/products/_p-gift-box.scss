@@ -1,22 +1,28 @@
 @use '../foundation/index' as *;
-@use '../global/variables' as *;
-@use '../global/mixins' as *;
+@use '../global/index' as *;
 
 .p-gift-box {
   &__list {
-    margin-block-end: -10%;
+    display: grid;
+    row-gap: $spacing-3xl;
   }
   &__item {
-    width: 46%;
+    width: 70%;
+    max-width: 400px;
     &._right {
       margin-inline-start: auto;
     }
+  }
+  &__article {
+    display: grid;
+    row-gap: $spacing-md;
   }
   &__card {
     border-radius: 12px;
     overflow: hidden;
     display: block;
-    padding: 1.5rem;
+    padding-block: $spacing-md $spacing-lg;
+    padding-inline: $spacing-sm;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     &:hover {
       opacity: 0.8;
@@ -27,11 +33,30 @@
     overflow: hidden;
     aspect-ratio: 3/4;
   }
-}
-
-@for $i from 1 through 10 {
-  .p-gift-box__item:nth-child(#{$i}) {
-    $y: -($i - 1) * 20%;
-    transform: translateY($y);
+  &__card-content {
+    text-align: center;
+    display: grid;
+    row-gap: $spacing-sm;
+  }
+  &__card-title {
+    font-size: fz(24, 32);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__card-price {
+    font-size: fz(14, 16);
+  }
+  &__card-catch {
+    font-size: fz(20, 24);
+    font-family: $font-serif;
+    font-weight: $fw-semibold;
+    text-align: center;
   }
 }
+
+// @for $i from 1 through 10 {
+//   .p-gift-box__item:nth-child(#{$i}) {
+//     $y: -($i - 1) * 20%;
+//     transform: translateY($y);
+//   }
+// }

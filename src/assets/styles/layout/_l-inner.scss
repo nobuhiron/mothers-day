@@ -2,10 +2,17 @@
 @use '../global/mixins' as *;
 .l-inner {
   margin-inline: auto;
+  display: grid;
   @include mq(md) {
     max-width: $layout-max-width-inner;
     &._wide {
       max-width: $layout-max-width-inner--wide;
+    }
+  }
+  &:has(.c-section-title) {
+    gap: $spacing-lg;
+    @include mq(md) {
+      gap: $spacing-xl;
     }
   }
 }

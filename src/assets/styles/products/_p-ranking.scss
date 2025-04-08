@@ -1,0 +1,9 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.p-ranking {
+  &__article {
+    display: grid;
+    row-gap: $spacing-md;
+  }
+}

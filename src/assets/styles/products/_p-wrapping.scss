@@ -1,0 +1,14 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.p-wrapping {
+  &__title {
+    font-size: fz(16, 20);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__article {
+    display: grid;
+    row-gap: $spacing-md;
+  }
+}

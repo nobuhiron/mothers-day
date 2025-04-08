@@ -1,0 +1,28 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.p-price-gift {
+  &__list {
+    display: grid;
+    gap: $spacing-lg;
+    @include mq(md) {
+      gap: $spacing-xl;
+    }
+  }
+  &__price-label {
+    font-family: $font-serif;
+    padding-inline: 8.53%;
+    font-size: fz(16, 20);
+    @include mq(md) {
+      padding-inline: 11.1%;
+    }
+  }
+  &__group {
+    display: grid;
+    gap: $spacing-md;
+  }
+  &__card-wrapper {
+    display: grid;
+    gap: $spacing-md;
+  }
+}

@@ -1,0 +1,52 @@
+@use '../global/index' as *;
+@use '../foundation/index' as *;
+
+.p-info {
+  &__detail {
+    display: grid;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      display: block;
+      font-size: fz(14, 20);
+      line-height: 1.6;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    font-size: fz(18, 24);
+    line-height: 1.6;
+    text-align: center;
+    strong {
+      color: $color-accent;
+      font-size: 1.2em;
+    }
+  }
+  &__date {
+    text-align: center;
+  }
+  &__deadline--outer {
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $color-accent;
+    }
+  }
+  &__deadline--inner {
+    display: flex;
+    padding-block: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  &__deadline-img {
+    flex: 0 1 20%;
+  }
+}

@@ -1,0 +1,43 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.c-item-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: $spacing-md;
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  &__rank {
+    font-size: fz(14, 18);
+    line-height: 1.6;
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__title {
+    font-size: fz(16, 20);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__body {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+  }
+  &__price {
+    font-size: fz(14, 16);
+  }
+  &__price-unit {
+    font-size: fz(12, 14);
+  }
+}
+
+.p-ranking__article {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  gap: $spacing-md;
+}

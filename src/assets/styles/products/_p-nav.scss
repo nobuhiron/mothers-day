@@ -1,12 +1,12 @@
 @use '../foundation/index' as *;
-@use '../global/mixins' as *;
+@use '../global/index' as *;
 
 .p-nav {
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    column-gap: 2rem;
+    row-gap: $spacing-md;
+    column-gap: $spacing-xl;
     @include mq(sm) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -20,19 +20,24 @@
     align-items: center;
     margin-inline: auto;
     gap: 1rem;
+    max-width: 300px;
+    position: relative;
     &:after {
       content: '';
       display: block;
-      width: 2rem;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1rem;
       aspect-ratio: 1/1;
-      background-color: #000;
+      background: url('/src/assets/images/svg/shevron-down.svg') no-repeat
+        center center / contain;
     }
   }
   &__link-img {
     border-radius: 50%;
     overflow: hidden;
-    flex: 0 1 30%;
-    max-width: 5rem;
     aspect-ratio: 1/1;
   }
   &__link-title {

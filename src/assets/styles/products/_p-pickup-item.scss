@@ -1,17 +1,52 @@
 @use '../foundation/index' as *;
-@use '../global/variables' as *;
-@use '../global/mixins' as *;
+@use '../global/index' as *;
 
 .p-pickup-item {
   &__article {
+    display: grid;
+    row-gap: $spacing-md;
   }
   &__article-img {
     aspect-ratio: 4/3;
     overflow: hidden;
   }
+  &__content {
+    text-align: center;
+    display: grid;
+    row-gap: $spacing-sm;
+  }
+  &__title {
+    font-size: fz(16, 20);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__price-label {
+    font-size: fz(12, 14);
+  }
+
   &__detail {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: $spacing-md;
+  }
+  &__slide {
+    display: grid;
+    row-gap: $spacing-md;
+  }
+  &__slide-img {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  &__slide-content {
+    display: grid;
+    row-gap: $spacing-sm;
+  }
+  &__slide-title {
+    font-size: fz(16, 20);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__slide-description {
+    font-size: fz(12, 14);
   }
 }

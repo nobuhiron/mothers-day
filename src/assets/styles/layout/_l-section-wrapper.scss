@@ -1,0 +1,9 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+.l-section-wrapper {
+  display: grid;
+  row-gap: $spacing-3xl;
+  @include mq(md) {
+    row-gap: $spacing-5xl;
+  }
+}

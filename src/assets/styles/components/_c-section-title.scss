@@ -1,0 +1,11 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.c-section-title {
+  font-family: $font-serif;
+  font-weight: $fw-semibold;
+  font-size: fz(24, 32);
+  line-height: 1.4;
+  letter-spacing: 0.025em;
+  text-align: center;
+}

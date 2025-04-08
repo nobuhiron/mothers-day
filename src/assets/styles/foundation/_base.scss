@@ -1,4 +1,4 @@
-@use '../global/variables' as *;
+@use '../global/index' as *;
 
 html {
   min-height: 100%;
@@ -17,7 +17,7 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   font-weight: $fw-regular;
-  background-color: $color-bg;
+  background-color: $color-white;
   overflow-wrap: break-word;
 }
 

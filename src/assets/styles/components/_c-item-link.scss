@@ -1,0 +1,21 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.c-item-link {
+  display: block;
+  width: 80%;
+  max-width: 280px;
+  padding: 4px 12px;
+  background-color: $color-sub;
+  color: $color-white;
+  text-align: center;
+  border-radius: 12px;
+  font-size: fz(12, 16);
+  line-height: 1.6;
+  margin-inline: auto;
+  text-wrap: nowrap;
+
+  .c-card-item & {
+    width: 90%;
+  }
+}
