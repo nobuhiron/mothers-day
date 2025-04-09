@@ -29,24 +29,5 @@
     flex-direction: column;
     gap: $spacing-md;
   }
-  &__slide {
-    display: grid;
-    row-gap: $spacing-md;
-  }
-  &__slide-img {
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-  }
-  &__slide-content {
-    display: grid;
-    row-gap: $spacing-sm;
-  }
-  &__slide-title {
-    font-size: fz(16, 20);
-    font-weight: $fw-semibold;
-    font-family: $font-serif;
-  }
-  &__slide-description {
-    font-size: fz(12, 14);
-  }
+
 }

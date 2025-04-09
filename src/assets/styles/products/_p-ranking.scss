@@ -4,6 +4,8 @@
 .p-ranking {
   &__article {
     display: grid;
-    row-gap: $spacing-md;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    gap: $spacing-md;
   }
 }

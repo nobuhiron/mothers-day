@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
 import './assets/styles/style.scss';
 import './modules/splide.js';
+import './modules/images.js';
 
 document.querySelector('#app').innerHTML = `
   <div>

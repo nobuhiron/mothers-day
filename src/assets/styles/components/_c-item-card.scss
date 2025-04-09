@@ -17,27 +17,21 @@
     font-weight: $fw-semibold;
     font-family: $font-serif;
   }
-  &__title {
-    font-size: fz(16, 20);
-    font-weight: $fw-semibold;
-    font-family: $font-serif;
-  }
   &__body {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 2;
   }
+  &__title {
+    font-size: fz(16, 20);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+
   &__price {
     font-size: fz(14, 16);
   }
   &__price-unit {
     font-size: fz(12, 14);
   }
-}
-
-.p-ranking__article {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100%;
-  gap: $spacing-md;
 }

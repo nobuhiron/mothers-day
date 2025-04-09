@@ -1,0 +1,27 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.c-article-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: $spacing-md;
+  &__wrapper {
+    display: grid;
+  }
+  &__img {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  &__body {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  &__title {
+    font-size: fz(16, 20);
+    font-weight: $fw-semibold;
+    font-family: $font-serif;
+  }
+  &__description {
+    font-size: fz(12, 14);
+  }
+}
