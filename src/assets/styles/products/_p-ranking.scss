@@ -2,10 +2,24 @@
 @use '../global/index' as *;
 
 .p-ranking {
+  &__header {
+    display: grid;
+    gap: $spacing-xs;
+    justify-items: center;
+  }
+  &__header-img {
+    width: 5rem;
+  }
   &__article {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100%;
     gap: $spacing-md;
+  }
+  &__splide {
+    margin-block-start: $spacing-lg;
+    @include mq(md) {
+      margin-block-start: $spacing-xl;
+    }
   }
 }

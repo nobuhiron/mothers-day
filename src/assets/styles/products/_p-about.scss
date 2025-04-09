@@ -2,35 +2,42 @@
 @use '../global/index' as *;
 
 .p-about {
+  &__header {
+    display: grid;
+    gap: $spacing-lg;
+  }
   &__contents-outline {
     border: 1px solid $color-sub;
-    padding: $spacing-sm;
+    padding-inline: $spacing-md;
+    padding-block: $spacing-xl;
     border-radius: 16px;
+    display: grid;
+    gap: $spacing-2xl;
   }
   &__contents-wrapper {
     display: grid;
-    gap: $spacing-3xl;
   }
   &__content--upper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: $spacing-md;
     align-items: center;
-    justify-items: end;
-    gap: $spacing-sm;
   }
   &__img {
-    width: 100px;
+    margin-inline: auto;
+    width: 16%;
   }
   &__content--lower {
     display: grid;
-    grid-template-columns: 4% 20% 20% 26% 30% 4%;
+    grid-template-columns: 4% 24% 20% 22% 26% 4%;
     grid-template-rows: 86px auto auto auto 4.6%;
-
-    gap: $spacing-sm;
+    justify-content: center;
+    gap: $spacing-md;
   }
   &__paragraph {
-    font-size: fz(18, 24);
-    line-height: 2;
+    font-size: fz(14, 18);
+    line-height: 2.6;
+    font-family: $font-serif;
     &._second {
       display: grid;
       grid-column: 2/ 5;
@@ -38,15 +45,15 @@
     }
   }
   &__img-item {
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: transform, opacity;
     transition: transform 0.3s ease-out;
-    will-change: transform;
     &._first {
-      grid-column: 4 / 5;
-      grid-row: 1 / 2;
     }
     &._second {
       grid-column: 5 / 6;
-      grid-row: 2/ 3;
+      grid-row: 1/ 2;
     }
     &._third {
       grid-column: 4 / 5;
@@ -55,6 +62,12 @@
     &._fourth {
       grid-column: 2 / 3;
       grid-row: 3 / 4;
+    }
+  }
+  &__features {
+    margin-block-start: $spacing-lg;
+    @include mq(md) {
+      margin-block-start: $spacing-xl;
     }
   }
 }

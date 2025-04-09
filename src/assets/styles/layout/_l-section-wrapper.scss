@@ -1,6 +1,7 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
 .l-section-wrapper {
+  margin-block-start: $spacing-3xl;
   display: grid;
   row-gap: $spacing-3xl;
   @include mq(md) {

@@ -10,19 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
       perMove: 1,
       gap: '1rem',
       pagination: false,
-      padding: { left: ' 11.1', right: ' 11.1' },
+      padding: { left: '11.1%', right: '11.1%' },
+      arrows: true,
       breakpoints: {
         576: {
           perPage: 2,
-          padding: { left: ' 8.53%', right: ' 8.53%' },
+          padding: { left: '8.53%', right: '8.53%' },
         },
         768: {
           perPage: 3,
-          padding: { left: ' 8.53%', right: ' 8.53%' },
+          padding: { left: '8.53%', right: '8.53%' },
         },
         1024: {
           perPage: 4,
-          padding: { left: ' 11.1', right: ' 11.1' },
+          padding: { left: '11.1%', right: '11.1%' },
         },
       },
     }).mount();

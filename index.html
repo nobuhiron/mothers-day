@@ -57,13 +57,18 @@
           </div>
         </div>
       </section>
-      <section aria-labelledby="ranking-heading" class="p-ranking">
+        <section aria-labelledby="ranking-heading" class="p-ranking">
         <div class="l-container">
-          <h2 id="ranking-heading" class="c-section-title">
-            森半の母の日<br>ギフトランキング
-          </h2>
+          <header class="p-ranking__header">
+            <div class="p-ranking__header-img">
+              <img src="./src/assets/images/ranking.png" alt="">
+            </div>
+            <h2 id="ranking-heading" class="c-section-title p-ranking__title">
+              森半の母の日<br>ギフトランキング
+            </h2>
+          </header>
           </div>
-          <div class="splide js-splide-item">
+          <div class="splide js-splide-item p-ranking__splide" >
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
@@ -185,7 +190,7 @@
             </div>
           </div>
       </section>
-      <section aria-labelledby="nav-heading" class="p-nav">
+        <section aria-labelledby="nav-heading" class="p-nav">
         <div class="l-container">
           <h2 id="nav-heading" class="c-section-title">コンテンツ一覧</h2>
           <div class="l-inner _wide">
@@ -259,7 +264,7 @@
           </div>
         </div>
       </section>
-      <section aria-labelledby="price-range-heading" class="p-price-range">
+        <section aria-labelledby="price-range-heading" class="p-price-range">
         <div class="l-container">
           <h2 id="price-range-heading" class="c-section-title">
             価格帯から探す
@@ -285,16 +290,22 @@
           </div>
         </div>
       </section>
-      <section class="p-about">
+        <section class="p-about">
         <div class="l-container">
-        <div class="l-inner">
+        <div class="l-inner _wide">
           <div class="p-about__contents-outline">
+            <div class="p-about__header">
           <h2 class="c-section-title">森半とは</h2>
-          <div class="p-about__contents-wrapper">
-          <div class="p-about__content--upper">
-            <div class="p-about__img">
+          <div class="p-about__img">
               <img src="./src/assets/images/svg/logo.svg" alt="">
             </div>
+          </div>
+          <div class="p-about__contents-wrapper">
+          <div class="p-about__content--upper">
+            <figure class="p-about__img-item _first js-object" data-y="-20">
+              <img src="./src/assets/images/about-img-1.jpg" alt="森半のイメージ1">
+            </figure>
+
           <p class="p-about__paragraph _first">
             共栄製茶の代表ブランド「森半」のロゴは「信頼される品質」の
 円弧に抱きかかえられる3つの
@@ -305,9 +316,7 @@
               <p class="p-about__paragraph _second">
                 天保7年(1836年)、宇治小倉に創業した森半。日本茶を極めた茶師による厳選された日本茶や抹茶をはじめ、その素材を活かした高品質な商品を製造・販売をしております。伝統と革新の両方を重んじる森半だからこそご提供できる幅広い商品を、ぜひご覧ください。
               </p>
-            <figure class="p-about__img-item _first js-object" data-y="-20">
-              <img src="./src/assets/images/about-img-1.jpg" alt="森半のイメージ1">
-            </figure>
+
             <figure class="p-about__img-item _second js-object" data-y="60">
     <img src="./src/assets/images/about-img-2.jpg" alt="森半のイメージ2">
   </figure>
@@ -322,7 +331,7 @@
         </div>
         </div>
         </div>
-           <div class="p-about__features">
+        <div class="p-about__features">
               <div class="splide js-splide-features">
                 <div class="splide__track">
                   <ul class="splide__list">
@@ -387,252 +396,270 @@
               </div>
             </div>
       </section>
-      <section id="otameshi" class="p-pickup-item">
-        <div class="l-container">
-          <div class="l-inner">
-            <h2 class="c-section-title">お試しセット</h2>
-            <article class="p-pickup-item__article">
-              <div class="p-pickup-item__img">
-                <img src="./src/assets/images/otameshi_square.jpg" alt="" />
+        <section id="otameshi" class="p-pickup-item">
+          <div class="l-container">
+            <div class="l-inner">
+              <h2 class="c-section-title">お試しセット</h2>
+              <article class="p-pickup-item__article">
+                <div class="p-pickup-item__img">
+                  <img src="./src/assets/images/otameshi_square.jpg" alt="" />
+                </div>
+              </article>
+              <div class="p-pickup-item__detail">
+                <div class="splide js-splide-pickup">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <article class="c-article-card">
+                          <div class="c-article-card__img">
+                            <img
+                              src="./src/assets/images/otameshi-image.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="c-article-card__body">
+                            <h4 class="c-article-card__title">
+                              スイーツ三種の詰め合わせセット
+                            </h4>
+                            <p class="c-article-card__description">
+                              ご自宅用はもちろん、ちょっとしたギフトにもおすすめ！！
+                            </p>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="splide__slide">
+                        <article class="c-article-card">
+                          <div class="c-article-card__img">
+                            <img
+                              src="./src/assets/images/financier.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="c-article-card__body">
+                            <h4 class="c-article-card__title">
+                              抹茶フィナンシェ
+                            </h4>
+                            <p class="c-article-card__description">
+                              しっとりとした口当たりで、バター・アーモンドと宇治抹茶のまろやかな風味が口の中でほどけていきます。
+                            </p>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="splide__slide">
+                        <article class="c-article-card">
+                          <div class="c-article-card__img">
+                            <img src="./src/assets/images/waffle.jpg" alt="" />
+                          </div>
+                          <div class="c-article-card__body">
+                            <h4 class="c-article-card__title">
+                              抹茶ヴァッフェル
+                            </h4>
+                            <p class="c-article-card__description">
+                              きめ細かいサクサクのクッキ生地にしっとりとしたクリームがお口の中でほどける上品な味わいの一品です。
+                            </p>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="splide__slide">
+                        <article class="c-article-card">
+                          <div class="c-article-card__img">
+                            <img src="./src/assets/images/cookie.jpg" alt="" />
+                          </div>
+                          <div class="c-article-card__body">
+                            <h4 class="c-article-card__title">抹茶クッキー</h4>
+                            <p class="c-article-card__description">
+                              高級抹茶をたっぷり使って焼き上げた、香り豊かなクッキーです。俵型の一口にちょうどいいサイズ♪
+                            </p>
+                          </div>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <!-- <div class="p-pickup-item__content">
-                <h3 class="p-pickup-item__title">お試しセット</h3>
-                <p class="p-pickup-item__price">
-                  1,500
-                  <span class="c-item-card__price-unit">円(税込)</span>
+                              <a href="#" class="p-pickup-item__link c-item-link"
+                  >商品ページを見る</a
+                >
+
+            </div>
+          </div>
+        </section>
+        <section id="gift-box" class="p-gift-box">
+          <div class="l-container">
+            <h2 class="c-section-title">母の日ギフトボックス</h2>
+            <div class="p-gift-box__img">
+              <img src="./src/assets/images/giftbox_square.jpg" alt="" />
+            </div>
+            <ul class="p-gift-box__list">
+              <li class="p-gift-box__item _right _first">
+                <article class="p-gift-box__article">
+                  <a href="#" class="p-gift-box__card">
+                    <div class="p-gift-box__card-img">
+                      <img src="./src/assets/images/gift-h.jpg" alt="" />
+                    </div>
+                    <div class="p-gift-box__card-content">
+                      <h4 class="p-gift-box__card-title">ギフトセットA</h4>
+                      <p class="p-gift-box__card-price">
+                        7,000
+                        <span class="c-item-card__price-unit">円(税込)</span>
+                      </p>
+                    </div>
+                  </a>
+                  <div class="p-gift-box__article-content">
+                    <p class="p-gift-box__card-catch">
+                      【甘い物好きなお母さんへ】
+                    </p>
+                  </div>
+                  <a href="#" class="p-gift-box__item-link c-item-link"
+                    >商品ページを見る</a
+                  >
+                </article>
+              </li>
+              <li class="p-gift-box__item _second">
+                <article class="p-gift-box__article">
+                  <a href="#" class="p-gift-box__card">
+                    <div class="p-gift-box__card-img">
+                      <img src="./src/assets/images/gift-h.jpg" alt="" />
+                    </div>
+                    <div class="p-gift-box__card-content">
+                      <h4 class="p-gift-box__card-title">ギフトセットB</h4>
+                      <p class="p-gift-box__card-price">
+                        5,900
+                        <span class="c-item-card__price-unit">円(税込)</span>
+                      </p>
+                    </div>
+                  </a>
+                  <div class="p-gift-box__article-content">
+                    <p class="p-gift-box__card-catch">
+                      【コーヒー好きなお母さんへ】
+                    </p>
+                  </div>
+                  <a href="#" class="p-gift-box__item-link c-item-link"
+                    >商品ページを見る</a
+                  >
+                </article>
+              </li>
+              <li class="p-gift-box__item _right _third">
+                <article class="p-gift-box__article">
+                  <a href="#" class="p-gift-box__card">
+                    <div class="p-gift-box__card-img">
+                      <img src="./src/assets/images/gift-h.jpg" alt="" />
+                    </div>
+                    <div class="p-gift-box__card-content">
+                      <h4 class="p-gift-box__card-title">ギフトセットC</h4>
+                      <p class="p-gift-box__card-price">
+                        5,700
+                        <span class="c-item-card__price-unit">円(税込)</span>
+                      </p>
+                    </div>
+                  </a>
+                  <div class="p-gift-box__article-content">
+                    <p class="p-gift-box__card-catch">
+                      【コーヒー好きなお母さんへ】
+                    </p>
+                  </div>
+                  <a href="#" class="p-gift-box__item-link c-item-link"
+                    >商品ページを見る</a
+                  >
+                </article>
+              </li>
+              <li class="p-gift-box__item _fourth">
+                <article class="p-gift-box__article">
+                  <a href="#" class="p-gift-box__card">
+                    <div class="p-gift-box__card-img">
+                      <img src="./src/assets/images/gift-h.jpg" alt="" />
+                    </div>
+                    <div class="p-gift-box__card-content">
+                      <h4 class="p-gift-box__card-title">ギフトセットD</h4>
+                      <p class="p-gift-box__card-price">
+                        5,800
+                        <span class="c-item-card__price-unit">円(税込)</span>
+                      </p>
+                    </div>
+                  </a>
+                  <div class="p-gift-box__article-content">
+                    <p class="p-gift-box__card-catch">
+                      【好奇心旺盛なお母さんへ】
+                    </p>
+                  </div>
+                  <a href="#" class="p-gift-box__item-link c-item-link"
+                    >商品ページを見る</a
+                  >
+                </article>
+              </li>
+              <li class="p-gift-box__item _right">
+                <article class="p-gift-box__article">
+                  <a href="#" class="p-gift-box__card">
+                    <div class="p-gift-box__card-img">
+                      <img src="./src/assets/images/gift-h.jpg" alt="" />
+                    </div>
+                    <div class="p-gift-box__card-content">
+                      <h4 class="p-gift-box__card-title">ギフトセットE</h4>
+                      <p class="p-gift-box__card-price">
+                        6,000
+                        <span class="c-item-card__price-unit">円(税込)</span>
+                      </p>
+                    </div>
+                  </a>
+                  <div class="p-gift-box__article-content">
+                    <p class="p-gift-box__card-catch">
+                      【おしゃれなお母さんへ】
+                    </p>
+                  </div>
+                  <a href="#" class="p-gift-box__item-link c-item-link"
+                    >商品ページを見る</a
+                  >
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          id="wrapping"
+          aria-labelledby="wrapping-heading"
+          class="p-wrapping"
+        >
+          <div class="l-container">
+            <h2 id="wrapping-heading" class="c-section-title">
+              母の日限定の包装紙
+            </h2>
+            <article class="p-wrapping__article">
+              <div class="p-wrapping__img">
+                <img src="./src/assets/images/wrapping.jpg" alt="" />
+              </div>
+              <h3 class="p-wrapping__title">
+                【母の日限定】カーネーション柄包装紙
+              </h3>
+              <div class="p-wrapping__description">
+                <p>
+                  森半tea&coffeeではギフトボックス以外にも、母の日にぴったりな包装をご用意しております。
                 </p>
-              </div> -->
-              <a href="#" class="p-pickup-item__link c-item-link">商品ページを見る</a>
-            </article>
-            <div class="p-pickup-item__detail">
-              <div class="splide js-splide-pickup">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <article class="c-article-card">
-                        <div class="c-article-card__img">
-                          <img src="./src/assets/images/otameshi-image.jpg" alt="" />
-                        </div>
-                        <div class="c-article-card__body">
-                          <h4 class="c-article-card__title">
-                           スイーツ三種の詰め合わせセット
-                          </h4>
-                          <p class="c-article-card__description">
-                            ご自宅用はもちろん、ちょっとしたギフトにもおすすめ！！                          </p>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="splide__slide">
-                      <article class="c-article-card">
-                        <div class="c-article-card__img">
-                          <img src="./src/assets/images/financier.jpg" alt="" />
-                        </div>
-                        <div class="c-article-card__body">
-                          <h4 class="c-article-card__title">
-                            抹茶フィナンシェ
-                          </h4>
-                          <p class="c-article-card__description">しっとりとした口当たりで、バター・アーモンドと宇治抹茶のまろやかな風味が口の中でほどけていきます。                          </p>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="splide__slide">
-                      <article class="c-article-card">
-                        <div class="c-article-card__img">
-                          <img src="./src/assets/images/waffle.jpg" alt="" />
-                        </div>
-                        <div class="c-article-card__body">
-                          <h4 class="c-article-card__title">
-                           抹茶ヴァッフェル
-                          </h4>
-                          <p class="c-article-card__description">
-                            きめ細かいサクサクのクッキ生地にしっとりとしたクリームがお口の中でほどける上品な味わいの一品です。                          </p>
-                        </div>
-                      </article>
-                    </li>
-                    <li class="splide__slide">
-                      <article class="c-article-card">
-                        <div class="c-article-card__img">
-                          <img src="./src/assets/images/cookie.jpg" alt="" />
-                        </div>
-                        <div class="c-article-card__body">
-                          <h4 class="c-article-card__title">
-                            抹茶クッキー
-                          </h4>
-                          <p class="c-article-card__description">
-高級抹茶をたっぷり使って焼き上げた、香り豊かなクッキーです。俵型の一口にちょうどいいサイズ♪                          </p>
-                        </div>
-                      </article>
-                    </li>
-                  </ul>
-                </div>
+                <p>
+                  今年は小さなカーネーションの柄がちりばめられた可愛いデザインをご用意！
+                </p>
               </div>
-            </div>
+            </article>
           </div>
-        </div>
-      </section>
-      <section id="gift-box" class="p-gift-box">
-        <div class="l-container">
-          <h2 class="c-section-title">母の日ギフトボックス</h2>
-          <div class="p-gift-box__img">
-            <img src="./src/assets/images/giftbox_square.jpg" alt="" />
-          </div>
-          <ul class="p-gift-box__list">
-            <li class="p-gift-box__item _right">
-              <article class="p-gift-box__article">
-                <a href="#" class="p-gift-box__card">
-                  <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-h.jpg" alt="" />
-                  </div>
-                  <div class="p-gift-box__card-content">
-                    <h4 class="p-gift-box__card-title">
-                      ギフトセットA
-                    </h4>
-                    <p class="p-gift-box__card-price">
-                      7,000
-                      <span class="c-item-card__price-unit">円(税込)</span>
-                    </p>
-                  </div>
-                </a>
-                <div class="p-gift-box__article-content">
-                  <p class="p-gift-box__card-catch">
-                    【甘い物好きなお母さんへ】
-                  </p>
-                </div>
-                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
-              </article>
-            </li>
-            <li class="p-gift-box__item ">
-              <article class="p-gift-box__article">
-                <a href="#" class="p-gift-box__card">
-                  <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-h.jpg" alt="" />
-                  </div>
-                  <div class="p-gift-box__card-content">
-                    <h4 class="p-gift-box__card-title">
-                      ギフトセットB
-                    </h4>
-                    <p class="p-gift-box__card-price">
-                     5,900
-                      <span class="c-item-card__price-unit">円(税込)</span>
-                    </p>
-                  </div>
-                </a>
-                <div class="p-gift-box__article-content">
-                  <p class="p-gift-box__card-catch">
-                    【コーヒー好きなお母さんへ】
-                  </p>
-                </div>
-                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
-              </article>
-            </li>
-            <li class="p-gift-box__item _right">
-              <article class="p-gift-box__article">
-                <a href="#" class="p-gift-box__card">
-                  <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-h.jpg" alt="" />
-                  </div>
-                  <div class="p-gift-box__card-content">
-                    <h4 class="p-gift-box__card-title">
-                      ギフトセットC
-                    </h4>
-                    <p class="p-gift-box__card-price">
-                      5,700
-                      <span class="c-item-card__price-unit">円(税込)</span>
-                    </p>
-                  </div>
-                </a>
-                <div class="p-gift-box__article-content">
-                  <p class="p-gift-box__card-catch">
-                    【コーヒー好きなお母さんへ】
-                  </p>
-                </div>
-                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
-              </article>
-            </li>
-            <li class="p-gift-box__item">
-              <article class="p-gift-box__article">
-                <a href="#" class="p-gift-box__card">
-                  <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-h.jpg" alt="" />
-                  </div>
-                  <div class="p-gift-box__card-content">
-                    <h4 class="p-gift-box__card-title">
-                      ギフトセットD
-                    </h4>
-                    <p class="p-gift-box__card-price">
-                     5,800
-                      <span class="c-item-card__price-unit">円(税込)</span>
-                    </p>
-                  </div>
-                </a>
-                <div class="p-gift-box__article-content">
-                  <p class="p-gift-box__card-catch">
-                    【好奇心旺盛なお母さんへ】
-                  </p>
-                </div>
-                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
-              </article>
-            </li>
-            <li class="p-gift-box__item _right">
-              <article class="p-gift-box__article">
-                <a href="#" class="p-gift-box__card">
-                  <div class="p-gift-box__card-img">
-                    <img src="./src/assets/images/gift-h.jpg" alt="" />
-                  </div>
-                  <div class="p-gift-box__card-content">
-                    <h4 class="p-gift-box__card-title">
-                      ギフトセットE
-                    </h4>
-                    <p class="p-gift-box__card-price">
-                      6,000
-                      <span class="c-item-card__price-unit">円(税込)</span>
-                    </p>
-                  </div>
-                </a>
-                <div class="p-gift-box__article-content">
-                  <p class="p-gift-box__card-catch">
-                    【おしゃれなお母さんへ】
-                  </p>
-                </div>
-                <a href="#" class="p-gift-box__item-link c-item-link">商品ページを見る</a>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="wrapping" aria-labelledby="wrapping-heading" class="p-wrapping">
-        <div class="l-container">
-          <h2 id="wrapping-heading" class="c-section-title">
-            母の日限定の包装紙
-          </h2>
-          <article class="p-wrapping__article">
-            <div class="p-wrapping__img">
-              <img src="./src/assets/images/wrapping.jpg" alt="" />
-            </div>
-            <h3 class="p-wrapping__title">
-              【母の日限定】カーネーション柄包装紙
-            </h3>
-            <div class="p-wrapping__description">
-              <p>
-                森半tea&coffeeではギフトボックス以外にも、母の日にぴったりな包装をご用意しております。
-              </p>
-              <p>
-                今年は小さなカーネーションの柄がちりばめられた可愛いデザインをご用意！
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section id="price-gift" aria-labelledby="price-gift-heading" class="p-price-gift">
-        <div class="l-container">
-          <h2 id="price-gift-heading" class="c-section-title">
-            価格別おすすめギフト
-          </h2>
+        </section>
+        <section
+          id="price-gift"
+          aria-labelledby="price-gift-heading"
+          class="p-price-gift"
+        >
+          <div class="l-container">
+            <h2 id="price-gift-heading" class="c-section-title">
+              価格別おすすめギフト
+            </h2>
           </div>
           <ul class="p-price-gift__list">
             <li id="price-gift-1000-2000" class="p-price-gift__item">
               <article class="p-price-gift__group">
-                <h3 class="p-price-gift__price-label">1,000円 〜 2,000円</h3>
+                <h3 class="p-price-gift__price-label">
+                  <span>1,000円 〜 2,000円
+                    <img src="./src/assets/images/price.png" alt="" />
+                  </span>
+
+                </h3>
                 <div class="splide js-splide-item">
                   <div class="splide__track">
                     <ul class="splide__list">
@@ -640,7 +667,10 @@
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -648,18 +678,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -667,18 +704,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -686,18 +730,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -705,18 +756,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -724,18 +782,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -743,30 +808,15 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
-                        </div>
-                      </li>
-                      <li class="splide__slide">
-                        <div class="p-price-gift__card-wrapper">
-                          <a href="#" class="c-item-card">
-                            <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
-                            </div>
-                            <div class="c-item-card__body">
-                              <p class="c-item-card__title">
-                                森半 母の日ギフトボックス
-                              </p>
-                              <p class="c-item-card__price">
-                                1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
-                              </p>
-                            </div>
-                          </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -784,7 +834,10 @@
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -792,18 +845,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -811,18 +871,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -830,18 +897,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -849,18 +923,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -868,18 +949,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -887,18 +975,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -906,11 +1001,15 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -928,7 +1027,10 @@
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -936,18 +1038,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -955,18 +1064,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -974,18 +1090,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -993,18 +1116,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1012,18 +1142,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1031,18 +1168,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1050,11 +1194,15 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -1072,7 +1220,10 @@
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1080,18 +1231,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1099,18 +1257,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1118,18 +1283,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1137,18 +1309,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1156,18 +1335,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1175,11 +1361,15 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -1197,7 +1387,10 @@
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1205,18 +1398,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1224,18 +1424,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1243,18 +1450,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1262,18 +1476,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1281,18 +1502,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1300,18 +1528,25 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                       <li class="splide__slide">
                         <div class="p-price-gift__card-wrapper">
                           <a href="#" class="c-item-card">
                             <div class="c-item-card__img">
-                              <img src="./src/assets/images/gift-a2.jpg" alt="" />
+                              <img
+                                src="./src/assets/images/gift-a2.jpg"
+                                alt=""
+                              />
                             </div>
                             <div class="c-item-card__body">
                               <p class="c-item-card__title">
@@ -1319,11 +1554,15 @@
                               </p>
                               <p class="c-item-card__price">
                                 1,500
-                                <span class="c-item-card__price-unit">円(税込)</span>
+                                <span class="c-item-card__price-unit"
+                                  >円(税込)</span
+                                >
                               </p>
                             </div>
                           </a>
-                          <a href="#" class="c-item-card__link c-item-link">商品ページを見る</a>
+                          <a href="#" class="c-item-card__link c-item-link"
+                            >商品ページを見る</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -1332,22 +1571,18 @@
               </article>
             </li>
           </ul>
-      </section>
-      <section id="furoshiki" class="p-furoshiki">
-        <div class="l-container">
-          <h2 class="c-section-title">
-            風呂敷ラッピング
-          </h2>
-        </div>
-      </section>
-      <section id="e-gift" class="p-egift">
-        <div class="l-container">
-          <h2 class="c-section-title">
-            e-Gift
-          </h2>
-        </div>
-      </section>
-    </div>
+        </section>
+        <section id="furoshiki" class="p-furoshiki">
+          <div class="l-container">
+            <h2 class="c-section-title">風呂敷ラッピング</h2>
+          </div>
+        </section>
+        <section id="e-gift" class="p-egift">
+          <div class="l-container">
+            <h2 class="c-section-title">e-Gift</h2>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>

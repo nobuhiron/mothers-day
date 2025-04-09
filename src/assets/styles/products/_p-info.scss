@@ -4,6 +4,7 @@
 .p-info {
   &__detail {
     display: grid;
+    gap: $spacing-md;
   }
   &__title {
     display: flex;
@@ -16,8 +17,8 @@
     }
   }
   &__content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: $spacing-sm;
     font-size: fz(18, 24);
     line-height: 1.6;
     text-align: center;
