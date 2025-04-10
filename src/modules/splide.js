@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       pagination: false,
       height: 'auto',
       autoHeight: true,
-      padding: { left: ' 11.1', right: ' 11.1' },
+      padding: { left: ' 11.1%', right: ' 11.1%' },
       breakpoints: {
         576: {
           perPage: 2,
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         1024: {
           perPage: 4,
-          padding: { left: ' 11.1', right: ' 11.1' },
+          padding: { left: ' 11.1%', right: ' 11.1%' },
         },
       },
     }).mount();
