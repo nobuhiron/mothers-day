@@ -1,0 +1,36 @@
+@use '../foundation/index' as *;
+@use '../global/index' as *;
+
+.p-furoshiki {
+  &__img {
+    margin-bottom: $spacing-md;
+    img {
+      aspect-ratio: 16/9;
+      object-position: 0% 80%;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-md;
+    @include mq(sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__item {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: $spacing-md;
+    &._first {
+      grid-column: 1/3;
+      @include mq(sm) {
+        grid-column: auto;
+      }
+    }
+  }
+  &__text {
+    text-align: center;
+    font-size: fz(14, 20);
+    line-height: 1.6;
+  }
+}

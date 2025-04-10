@@ -1,10 +1,10 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
-.l-section-wrapper {
-  margin-block-start: $spacing-3xl;
-  display: grid;
-  row-gap: $spacing-3xl;
+
+// セクションの基本スタイル
+section {
+  padding-block: $spacing-xl;
   @include mq(md) {
-    row-gap: $spacing-5xl;
+    padding-block: $spacing-3xl;
   }
 }

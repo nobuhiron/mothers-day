@@ -14,7 +14,10 @@
   }
   &__body {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 6rem 1fr;
+    &._pickup {
+      grid-template-rows: 4rem 1fr;
+    }
   }
   &__title {
     font-size: fz(16, 20);

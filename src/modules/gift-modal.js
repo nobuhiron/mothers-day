@@ -26,11 +26,24 @@ export class GiftModal {
 
   openModal(giftId) {
     this.loadGiftData(giftId);
-    this.modal.classList.add('is-active');
+    this.modal.style.display = 'block';
+    requestAnimationFrame(() => {
+      this.modal.classList.add('is-active');
+    });
     document.body.style.overflow = 'hidden';
   }
 
   closeModal() {
+    this.modal.addEventListener(
+      'transitionend',
+      () => {
+        if (!this.modal.classList.contains('is-active')) {
+          this.modal.style.display = 'none';
+        }
+      },
+      { once: true }
+    );
+
     this.modal.classList.remove('is-active');
     document.body.style.overflow = '';
   }

@@ -29,5 +29,7 @@
     flex-direction: column;
     gap: $spacing-md;
   }
-
+  &__splide-wrapper {
+    overflow: hidden;
+  }
 }

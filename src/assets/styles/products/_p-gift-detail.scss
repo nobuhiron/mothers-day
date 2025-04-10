@@ -9,6 +9,9 @@
   width: 100%;
   height: 100%;
   z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 
   &__overlay {
     position: absolute;
@@ -17,6 +20,18 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &.is-active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.is-active &__overlay {
+    opacity: 1;
   }
 
   &__content {
@@ -33,6 +48,8 @@
     max-height: 90vh;
     overflow-y: auto;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 
     &::-webkit-scrollbar {
       width: 8px;
@@ -44,6 +61,10 @@
       background: #888;
       border-radius: 4px;
     }
+  }
+
+  &.is-active &__content {
+    opacity: 1;
   }
 
   &__close {
@@ -63,10 +84,6 @@
     &:hover {
       color: #000;
     }
-  }
-
-  &.is-active {
-    display: block;
   }
 }
 

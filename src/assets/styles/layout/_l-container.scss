@@ -2,6 +2,8 @@
 @use '../global/mixins' as *;
 
 .l-container {
+  width: 100%;
+  max-width: 100%;
   padding-inline: $layout-padding-sp;
   margin: 0 auto;
   display: grid;
