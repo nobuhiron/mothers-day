@@ -21,9 +21,9 @@
 
   &__price-label {
     font-family: $font-serif;
-    padding-inline-start: 12.53%;
+    padding-inline-start: 11.53%;
     font-size: fz(16, 20);
-    margin-block-end: $spacing-lg;
+    margin-block-end: $spacing-2xl;
 
     span {
       position: relative;
@@ -32,11 +32,11 @@
         content: '';
         position: absolute;
         display: block;
-        bottom: -1rem;
-        left: 0;
-        width: 100%;
+        bottom: -2rem;
+        left: -20%;
+        width: 120%;
         height: 100%;
-        background-image: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/price1.png');
+        background-image: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/price-1.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -45,20 +45,31 @@
         content: '';
         position: absolute;
         display: block;
-        bottom: -1rem;
-        left: -26%;
-        width: 26%;
+        bottom: -2rem;
+        left: -30%;
+        width: 38%;
         aspect-ratio: 3/4;
-        background-image: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/price2.png');
+        background-image: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/price-2.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom;
+        z-index: 1;
       }
     }
   }
 
   &__card-wrapper {
     display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    gap: $spacing-md;
+    align-items: center;
+  }
+
+  .c-item-card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
     gap: $spacing-md;
   }
 }

@@ -3,44 +3,53 @@
 
 .p-nav {
   &__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: $spacing-md;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     column-gap: $spacing-xl;
-    @include mq(sm) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
   }
   &__item {
-  }
-  &__link {
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
-    gap: 1rem;
-    max-width: 300px;
     position: relative;
+    padding-inline: $spacing-sm;
+    &:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      right: -$spacing-xl/2;
+      width: 1px;
+      height: 80%;
+      background-color: $color-sub;
+    }
     &:after {
       content: '';
       display: block;
       position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
       width: 1rem;
       aspect-ratio: 1/1;
       background: url('/src/assets/images/svg/shevron-down.svg') no-repeat
         center center / contain;
     }
   }
+  &__link {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-inline: auto;
+    text-align: center;
+    gap: 1rem;
+    position: relative;
+  }
   &__link-img {
-    border-radius: 50%;
-    overflow: hidden;
     aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    width: 70%;
+    margin-inline: auto;
   }
   &__link-title {
-    flex: 1 0 70%;
+    min-height: 4rem;
+    font-size: fz(10, 18);
   }
 }

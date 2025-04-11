@@ -72,5 +72,8 @@
   }
   &__link-button {
     margin-block-start: $spacing-md;
+    &._brand {
+      margin-block-start: $spacing-3xl;
+    }
   }
 }

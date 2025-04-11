@@ -2,67 +2,109 @@
 @use '../global/index' as *;
 
 .p-gift-box {
+  position: relative;
   &__list {
+    z-index: -1;
     display: grid;
     row-gap: $spacing-3xl;
     position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 3%;
-      left: 0;
-      width: 38%;
-      aspect-ratio: 1;
-      background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/carnation1.png')
-        no-repeat center center / cover;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: 70%;
-      right: 0;
-      width: 46%;
-      aspect-ratio: 1;
-      background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/carnation2.png')
-        no-repeat center center / cover;
+    @include mq(lg) {
+      row-gap: $spacing-4xl;
     }
   }
   &__item {
-    width: 70%;
-    max-width: 400px;
-
-    &._right {
-      margin-inline-start: auto;
+    position: relative;
+    padding-block: $spacing-xl;
+    @include mq(lg) {
+      padding-block: $spacing-5xl;
     }
-    &._first {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 50%;
+      background-color: #edd1ce;
+      z-index: -1;
+      width: 100vw;
+      left: 0;
+      @include mq(lg) {
+        width: 40%;
+        height: 100%;
+      }
     }
-    &._second {
+    &._reverse {
+      .p-gift-box__article {
+        @include mq(lg) {
+          flex-direction: row-reverse;
+        }
+      }
+      &::before {
+        background-color: #c5c8b8;
+        @include mq(lg) {
+          right: 0;
+          left: auto;
+        }
+      }
     }
+    // &._second {
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 3%;
+    //     left: 0;
+    //     width: 38%;
+    //     aspect-ratio: 1;
+    //     background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/carnation1.png')
+    //       no-repeat center center / cover;
+    //   }
+    // }
+    // &._fourth {
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 70%;
+    //     right: 0;
+    //     width: 46%;
+    //     aspect-ratio: 1;
+    //     background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/25mothersday/images/carnation2.png')
+    //       no-repeat center center / cover;
+    //   }
+    // }
   }
   &__article {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: $spacing-md;
+    position: relative;
+    @include mq(lg) {
+      flex-direction: row;
+      align-items: center;
+      column-gap: $spacing-3xl;
+    }
   }
   &__card {
-    border-radius: 12px;
-    overflow: hidden;
-    display: block;
-    padding-block: $spacing-md $spacing-lg;
-    padding-inline: $spacing-sm;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: $spacing-md;
+    @include mq(lg) {
+      flex: 1 1 50%;
+    }
     &:hover {
       opacity: 0.8;
     }
   }
   &__card-img {
-    border-radius: 12px;
-    overflow: hidden;
-    aspect-ratio: 3/4;
+    position: relative;
+    img {
+      aspect-ratio: 4/3;
+    }
   }
   &__card-content {
     text-align: center;
     display: grid;
     row-gap: $spacing-sm;
+    @include mq(lg) {
+      flex: 50%;
+    }
   }
   &__card-title {
     font-size: fz(24, 32);

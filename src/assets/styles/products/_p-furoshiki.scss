@@ -12,9 +12,12 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: $spacing-md;
+    column-gap: $spacing-md;
+    row-gap: $spacing-lg;
+
     @include mq(sm) {
       grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-md;
     }
   }
   &__item {
@@ -23,8 +26,11 @@
     gap: $spacing-md;
     &._first {
       grid-column: 1/3;
+      max-width: 50%;
+      margin-inline: auto;
       @include mq(sm) {
         grid-column: auto;
+        max-width: revert;
       }
     }
   }
