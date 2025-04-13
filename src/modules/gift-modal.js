@@ -50,10 +50,6 @@ export class GiftModal {
 
   async loadGiftData(giftId) {
     try {
-      // APIからデータを取得する場合
-      // const response = await fetch(`/api/gifts/${giftId}`);
-      // const data = await response.json();
-
       // または既存のデータを使用する場合
       const data = this.getGiftData(giftId);
 

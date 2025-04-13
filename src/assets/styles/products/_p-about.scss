@@ -1,11 +1,84 @@
 @use '../foundation/index' as *;
 @use '../global/index' as *;
 
+// .p-about {
+//   &__header {
+//     display: grid;
+//     gap: $spacing-lg;
+//   }
+//   &__contents-outline {
+//     border: 1px solid $color-sub;
+//     padding-inline: $spacing-md;
+//     padding-block: $spacing-xl;
+//     border-radius: 16px;
+//     display: grid;
+//     gap: $spacing-2xl;
+//   }
+//   &__contents-wrapper {
+//     display: grid;
+//   }
+//   &__content--upper {
+//     display: grid;
+//     grid-template-columns: auto auto;
+//     gap: $spacing-md;
+//     align-items: center;
+//   }
+//   &__img {
+//     margin-inline: auto;
+//     width: 16%;
+//   }
+//   &__content--lower {
+//     display: grid;
+//     grid-template-columns: 4% 24% 20% 22% 26% 4%;
+//     grid-template-rows: 86px auto auto auto 4.6%;
+//     justify-content: center;
+//     gap: $spacing-md;
+//   }
+//   &__paragraph {
+//     font-size: fz(14, 18);
+//     line-height: 2.6;
+//     font-family: $font-serif;
+//     &._second {
+//       display: grid;
+//       grid-column: 2/ 5;
+//       grid-row: 2 / 3;
+//     }
+//   }
+//   &__img-item {
+//     opacity: 0;
+//     transform: translateY(20px);
+//     will-change: transform, opacity;
+//     transition: transform 0.3s ease-out;
+//     &._first {
+//     }
+//     &._second {
+//       grid-column: 5 / 6;
+//       grid-row: 1/ 2;
+//     }
+//     &._third {
+//       grid-column: 4 / 5;
+//       grid-row: 4 / 5;
+//     }
+//     &._fourth {
+//       grid-column: 2 / 3;
+//       grid-row: 3 / 4;
+//     }
+//   }
+//   &__features {
+//     margin-block-start: $spacing-lg;
+//     @include mq(md) {
+//       margin-block-start: $spacing-xl;
+//     }
+//   }
+//   &__link-button {
+//     margin-block-start: $spacing-md;
+//     &._brand {
+//       margin-block-start: $spacing-3xl;
+//     }
+//   }
+// }
+
 .p-about {
-  &__header {
-    display: grid;
-    gap: $spacing-lg;
-  }
   &__contents-outline {
     border: 1px solid $color-sub;
     padding-inline: $spacing-md;
@@ -13,67 +86,85 @@
     border-radius: 16px;
     display: grid;
     gap: $spacing-2xl;
+    @include mq(md) {
+      gap: $spacing-4xl;
+    }
   }
-  &__contents-wrapper {
+  &__header {
     display: grid;
-  }
-  &__content--upper {
-    display: grid;
-    grid-template-columns: auto auto;
     gap: $spacing-md;
-    align-items: center;
   }
   &__img {
     margin-inline: auto;
     width: 16%;
   }
-  &__content--lower {
-    display: grid;
-    grid-template-columns: 4% 24% 20% 22% 26% 4%;
-    grid-template-rows: 86px auto auto auto 4.6%;
-    justify-content: center;
-    gap: $spacing-md;
-  }
   &__paragraph {
-    font-size: fz(14, 18);
+    max-width: 70%;
+    margin-inline: auto;
     line-height: 2.6;
     font-family: $font-serif;
-    &._second {
-      display: grid;
-      grid-column: 2/ 5;
-      grid-row: 2 / 3;
+  }
+  &__pictures {
+    @include mq(md) {
+      max-width: 70%;
+      margin-inline: auto;
     }
   }
-  &__img-item {
+  &__images-list {
+    display: flex;
+    gap: $spacing-md;
+    padding-block: 20%;
+    @include mq(md) {
+      gap: $spacing-lg;
+    }
+  }
+  &__images-item {
+    width: 50%;
+    aspect-ratio: 4/3;
     opacity: 0;
-    transform: translateY(20px);
-    will-change: transform, opacity;
-    transition: transform 0.3s ease-out;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    @include mq(md) {
+      width: 33.333333333333336%;
+    }
+
     &._first {
+      transform: translateY(-30%);
+      transition-delay: 0s;
     }
+
     &._second {
-      grid-column: 5 / 6;
-      grid-row: 1/ 2;
+      display: none;
+      transition-delay: 0.2s;
+      @include mq(md) {
+        display: block;
+      }
     }
+
     &._third {
-      grid-column: 4 / 5;
-      grid-row: 4 / 5;
+      transform: translateY(30%);
+      transition-delay: 0.4s;
     }
-    &._fourth {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
+    // アニメーション状態
+    &.is-animated {
+      opacity: 1;
+
+      &._first {
+        transform: translateY(-30%);
+      }
+
+      &._second {
+        transform: translateY(0);
+      }
+
+      &._third {
+        transform: translateY(30%);
+      }
     }
   }
   &__features {
     margin-block-start: $spacing-lg;
     @include mq(md) {
       margin-block-start: $spacing-xl;
-    }
-  }
-  &__link-button {
-    margin-block-start: $spacing-md;
-    &._brand {
-      margin-block-start: $spacing-3xl;
     }
   }
 }

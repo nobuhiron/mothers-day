@@ -1,28 +1,28 @@
+// 関数としてエクスポート
 export const initAboutAnimation = () => {
-  const imgItems = document.querySelectorAll('.p-about__img-item');
-  let delay = 0;
+  // DOMContentLoadedイベントは外側で処理する
+  const images = document.querySelectorAll('.p-about__images-item');
+
+  if (!images.length) return; // 要素が存在しない場合は処理を終了
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const imgItem = entry.target;
-          imgItem.style.transition = `opacity 0.8s ease ${delay}s, transform 1.2s ease ${delay}s`;
-          imgItem.style.opacity = '1';
-          imgItem.style.transform = 'translateY(0)';
-          delay += 0.3;
+          entry.target.classList.add('is-animated');
+          observer.unobserve(entry.target);
         }
       });
     },
     {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px',
+      threshold: 0.3,
     }
   );
 
-  imgItems.forEach((item) => {
-    item.style.opacity = '0';
-    item.style.transform = 'translateY(20px)';
-    observer.observe(item);
-  });
+  images.forEach((image) => observer.observe(image));
 };
+
+// メインのJavaScriptファイルでの使用
+document.addEventListener('DOMContentLoaded', () => {
+  initAboutAnimation();
+});

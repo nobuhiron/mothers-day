@@ -5,6 +5,9 @@
   &__article {
     display: grid;
     row-gap: $spacing-md;
+    &:focus-within {
+      outline: 2px solid $color-sub;
+    }
   }
   &__article-img {
     aspect-ratio: 4/3;

@@ -7,4 +7,7 @@ section {
   @include mq(md) {
     padding-block: $spacing-3xl;
   }
+  &:has(.p-hero__img) {
+    padding-block: 0;
+  }
 }

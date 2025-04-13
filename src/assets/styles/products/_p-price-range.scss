@@ -12,8 +12,8 @@
   &__item {
     width: 100%;
     max-width: 300px;
-    @include mq(sm) {
-      width: 33%;
+    @include mq(md) {
+      width: 50%;
     }
   }
   &__link {
@@ -26,6 +26,24 @@
     font-size: fz(14, 20);
     font-weight: $fw-semibold;
     font-family: $font-serif;
+    transition: all 0.3s ease;
+    // インタラクション
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+
+    // フォーカス状態
+    &:focus-visible {
+      outline: 2px solid $color-sub;
+      outline-offset: 2px;
+    }
+
+    // アクティブ状態
+    &:active {
+      transform: translateY(1px);
+    }
   }
   &__card-wrapper {
     display: grid;

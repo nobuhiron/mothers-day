@@ -8,8 +8,6 @@
   &__icon {
     width: 3rem;
     aspect-ratio: 1/1;
-    display: flex;
-    align-items: center;
     position: relative;
     &._wide {
       width: 2.5rem;
@@ -31,7 +29,6 @@
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 2;
-    min-height: 8rem;
   }
   &__title {
     font-size: fz(16, 20);
@@ -39,9 +36,10 @@
     font-family: $font-serif;
     line-height: 1.4;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    min-height: 4rem;
   }
 
   &__price {
@@ -49,5 +47,12 @@
   }
   &__price-unit {
     font-size: fz(12, 14);
+  }
+}
+
+.c-item-card,
+.c-item-link {
+  &:focus {
+    outline: 2px solid $color-sub;
   }
 }

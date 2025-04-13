@@ -84,6 +84,10 @@
     &:hover {
       color: #000;
     }
+
+    &:focus {
+      outline: 2px solid $color-sub;
+    }
   }
 }
 

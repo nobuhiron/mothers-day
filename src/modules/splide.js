@@ -78,3 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }).mount();
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const splides = document.querySelectorAll('.js-splide-pictures');
+
+  splides.forEach((el) => {
+    new Splide(el, {
+      type: 'fade',
+      rewind: true,
+      speed: 1000,
+      pagination: false,
+      height: 'auto',
+      autoHeight: true,
+      arrows: false,
+      autoplay: true,
+      interval: 4000,
+      pauseOnHover: true,
+      pauseOnFocus: true,
+      resetProgress: false,
+    }).mount();
+  });
+});

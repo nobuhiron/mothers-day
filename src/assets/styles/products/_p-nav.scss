@@ -4,52 +4,116 @@
 .p-nav {
   &__list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: $spacing-xl;
+    gap: $spacing-md;
+
+    @include mq(md) {
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: $spacing-xl;
+    }
   }
   &__item {
     position: relative;
-    padding-inline: $spacing-sm;
+    width: 100%;
+
+    @include mq(md) {
+      padding-inline: $spacing-sm;
+    }
+
     &:not(:last-child)::before {
-      content: '';
-      position: absolute;
-      top: 10%;
-      right: -$spacing-xl/2;
-      width: 1px;
-      height: 80%;
-      background-color: $color-sub;
+      content: none;
+
+      @include mq(md) {
+        content: '';
+        position: absolute;
+        top: 10%;
+        right: -$spacing-xl/2;
+        width: 1px;
+        height: 80%;
+        background-color: $color-sub;
+      }
     }
     &:after {
       content: '';
       display: block;
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      width: 1rem;
-      aspect-ratio: 1/1;
-      background: url('/src/assets/images/svg/shevron-down.svg') no-repeat
-        center center / contain;
+      width: 100%;
+      height: 1px;
+      background: $color-sub;
+      margin-top: $spacing-sm;
+
+      @include mq(md) {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 1rem;
+        aspect-ratio: 1/1;
+        background: url('/src/assets/images/svg/shevron-down.svg') no-repeat
+          center center / contain;
+        margin-top: 0;
+      }
     }
   }
   &__link {
     display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: $spacing-sm;
     align-items: center;
-    justify-items: center;
-    margin-inline: auto;
-    text-align: center;
-    gap: 1rem;
-    position: relative;
+    padding: $spacing-md $spacing-sm;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1rem;
+      aspect-ratio: 1/1;
+      background: url('/src/assets/images/svg/shevron-down.svg') no-repeat
+        center center / contain;
+      margin-inline-start: auto;
+
+      @include mq(md) {
+        margin-inline-start: revert;
+      }
+    }
+
+    @include mq(md) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      gap: 1rem;
+      padding: 0;
+    }
+
+    // インタラクション
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+
+    // フォーカス状態
+    &:focus-visible {
+      outline: 2px solid $color-sub;
+      outline-offset: 2px;
+    }
   }
   &__link-img {
     aspect-ratio: 1/1;
     display: grid;
     place-items: center;
-    width: 70%;
-    margin-inline: auto;
+    width: 4rem;
+
+    @include mq(md) {
+      width: 70%;
+      margin-inline: auto;
+    }
   }
   &__link-title {
-    min-height: 4rem;
-    font-size: fz(10, 18);
+    font-size: fz(14, 16);
+
+    @include mq(md) {
+      min-height: 4rem;
+      font-size: fz(10, 18);
+    }
   }
 }

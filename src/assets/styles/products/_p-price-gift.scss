@@ -60,7 +60,6 @@
 
   &__card-wrapper {
     display: grid;
-    grid-template-rows: auto 1fr auto;
     height: 100%;
     gap: $spacing-md;
     align-items: center;
