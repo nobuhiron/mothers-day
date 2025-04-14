@@ -26,8 +26,9 @@ ol {
   padding-inline-start: 0;
 }
 
-html:focus-within {
+html {
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 }
 
 body {
@@ -61,8 +62,9 @@ summary::-webkit-details-marker {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
+  html {
     scroll-behavior: auto;
+    -webkit-scroll-behavior: auto;
   }
   *,
   *::before,
@@ -71,6 +73,7 @@ summary::-webkit-details-marker {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+    -webkit-scroll-behavior: auto !important;
   }
 }
 

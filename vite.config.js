@@ -15,4 +15,15 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        scroll: 'src/modules/scroll.js',
+      },
+      output: {
+        entryFileNames: 'assets/[name]-[hash].js',
+      },
+    },
+  },
 });

@@ -5,7 +5,7 @@
   &__article {
     display: grid;
     row-gap: $spacing-md;
-    &:focus-within {
+    &:focus-visible {
       outline: 2px solid $color-sub;
     }
   }

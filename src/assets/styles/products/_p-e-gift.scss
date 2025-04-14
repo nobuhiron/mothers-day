@@ -3,7 +3,7 @@
 
 .p-egift {
   &__img {
-    &:focus-within {
+    &:focus-visible {
       outline: 2px solid $color-sub;
     }
   }

@@ -113,13 +113,8 @@
     }
   }
   &__card {
-    display: grid;
-    gap: $spacing-md;
     @include mq(lg) {
       flex: 1 1 50%;
-    }
-    &:hover {
-      opacity: 0.8;
     }
   }
   &__card-img {
@@ -190,19 +185,13 @@
 
 .p-gift-box__card,
 .p-gift-box__item-link {
-  &:focus {
+  &:focus-visible {
     outline: 2px solid $color-sub;
-  }
-
-  &:hover {
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
   }
 }
 
 button {
-  &:focus {
+  &:focus-visible {
     outline: 2px solid $color-sub;
   }
 }
-
