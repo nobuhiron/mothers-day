@@ -7,7 +7,7 @@
     gap: $spacing-md;
 
     @include mq(md) {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       column-gap: $spacing-xl;
     }
   }
@@ -17,6 +17,7 @@
 
     @include mq(md) {
       padding-inline: $spacing-sm;
+      max-width: 160px;
     }
 
     &:not(:last-child)::before {

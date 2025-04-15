@@ -18,8 +18,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'index.html',
+        index: 'index.html',
         scroll: 'src/modules/scroll.js',
+        main: 'src/main.js',
       },
       output: {
         entryFileNames: 'assets/[name]-[hash].js',
