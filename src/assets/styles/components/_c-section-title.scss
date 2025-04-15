@@ -8,4 +8,14 @@
   line-height: 1.4;
   letter-spacing: 0.025em;
   text-align: center;
+  &__header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: $spacing-xs;
+  }
+  &__icon {
+    width: 3rem;
+    height: 100%;
+  }
 }

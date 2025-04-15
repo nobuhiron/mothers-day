@@ -27,7 +27,6 @@ ol {
 }
 
 html {
-  scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
 }
 
@@ -62,10 +61,6 @@ summary::-webkit-details-marker {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-    -webkit-scroll-behavior: auto;
-  }
   *,
   *::before,
   *::after {
